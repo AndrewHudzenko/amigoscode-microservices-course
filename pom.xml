@@ -12,8 +12,13 @@
   <groupId>com.amigoscode</groupId>
   <artifactId>amigosservices</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <name>amigosservices</name>
+
+  <modules>
+    <module>customer</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
