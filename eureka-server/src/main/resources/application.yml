@@ -1,28 +1,14 @@
-server:
-  port: 8080
-
 spring:
   application:
-    name: customer
-  datasource:
-    username: amigoscode
-    url: jdbc:postgresql://localhost:5432/customer
-    password: password
-  jpa:
-    properties:
-      hibernate:
-        dialect:  org.hibernate.dialect.PostgreSQLDialect
-        format_sql: 'true'
-    hibernate:
-      ddl-auto: create-drop
-    show-sql: true
+    name: eureka-server
+
+server:
+  port: 8761
 
 eureka:
   client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-    fetch-registry: true
-    register-with-eureka: true
+    fetch-registry: false
+    register-with-eureka: false
 
 management:
   tracing:
@@ -52,3 +38,4 @@ management:
 logging:
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+
