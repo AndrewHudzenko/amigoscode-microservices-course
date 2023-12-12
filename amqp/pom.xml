@@ -11,6 +11,13 @@
     </parent>
 
     <packaging>jar</packaging>
-    <artifactId>clients</artifactId>
+    <artifactId>amqp</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
